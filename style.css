@@ -1,0 +1,9 @@
+p.upperCase{
+	text-transform: uppercase;
+}
+.center{
+	text-align: center;
+}
+.header {
+	background: rgb(10, 166, 255);
+}
