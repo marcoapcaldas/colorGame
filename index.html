@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Color Game</title>
+	<title>The Guessing Game</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 <body>
-	<div class="header">
-		<p class="upperCase center titleUp">The great</p>
-		<h1 class="center titleCenter">RGB(<span id="nRed"></span>, <span id="nGreen"></span>, <span id="nBlue"></span>)</h1>
-		<p class="upperCase center titleDown">Guessing game</p>
+	<h1>
+		The Great
+		<br>
+		<span id="colorDisplay"></span>
+		<br>
+		Color Game
+	</h1>
+
+	<div id="stripe">
+		<button id="reset">New Colors</button>
+		<span id="messageDisplay"></span>
+		<button id="easy">Easy</button>
+		<button class="selected" id="hard">Hard</button>
 	</div>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  	<p class="menu upperCase">New colors</p>
-  	<p class="menu upperCase">Easy</p>
-  	<p class="menu upperCase">Hard</p>
-	</nav>
-	<div>
-		<table>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
-		
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
 	</div>
+
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
